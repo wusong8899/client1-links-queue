@@ -28,16 +28,16 @@ export default class SettingsPage extends ExtensionPage {
       <div className="ExtensionPage-settings FlarumBadgesPage">
         <div className="container">
 
-          <div style="padding-bottom:10px">
+          <div style={{paddingBottom: '10px'}}>
             <Button className={'Button'} onclick={() => app.modal.show(LinksQueueAddModal)}>
               {app.translator.trans('wusong8899-links-queue.admin.link-add')}
             </Button>
           </div>
 
-          <ul id="linksQueueSortableItems" style="padding:0px;list-style-type: none;" oncreate={this.initSort.bind(this)}>
+          <ul id="linksQueueSortableItems" style={{padding: '0px', listStyleType: 'none'}} oncreate={this.initSort.bind(this)}>
             {this.linksQueueList.map((LinksQueueItemData) => {
               return (
-                <li itemID={LinksQueueItemData.id()} style="margin-top:5px;background: var(--body-bg);">
+                <li itemID={LinksQueueItemData.id()} style={{marginTop: '5px', background: 'var(--body-bg)'}}>
                   {LinksQueueListItem.component({ LinksQueueItemData })}
                 </li>
               );
