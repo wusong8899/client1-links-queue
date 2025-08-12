@@ -48,7 +48,7 @@ export default class LinksQueueAddModal extends Modal {
                 type: 'submit',
                 loading: this.loading,
               },
-              this.settingType==="add"?app.translator.trans('wusong8899-guaguale.admin.guaguale-data-add'):app.translator.trans('wusong8899-guaguale.admin.guaguale-data-save')
+              this.settingType==="add"?app.translator.trans('wusong8899-links-queue.admin.data-add'):app.translator.trans('wusong8899-links-queue.admin.data-save')
             )}&nbsp;
             {Button.component(
               {
@@ -58,7 +58,7 @@ export default class LinksQueueAddModal extends Modal {
                   this.hide();
                 }
               },
-              app.translator.trans('wusong8899-guaguale.admin.guaguale-data-cancel')
+              app.translator.trans('wusong8899-links-queue.admin.cancel')
             )}
           </div>
 

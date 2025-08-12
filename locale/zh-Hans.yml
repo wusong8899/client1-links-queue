@@ -7,6 +7,9 @@ wusong8899-links-queue:
     cancel: 取消
     save-error: 保存错误
     delete-error: 删除错误
+    data-add: 添加
+    data-save: 保存
+    add-error: 添加错误
     settings:
       item-id: ID
       item-name: 名称

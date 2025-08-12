@@ -7,6 +7,9 @@ wusong8899-links-queue:
     cancel: Cancel
     save-error: Save Error
     delete-error: Delete Error
+    data-add: Add
+    data-save: Save
+    add-error: Add Error
     settings:
       item-id: ID
       item-name: Name

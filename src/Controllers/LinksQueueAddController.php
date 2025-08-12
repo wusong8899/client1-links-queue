@@ -33,7 +33,7 @@ class LinksQueueAddController extends AbstractCreateController
         $errorMessage = "";
 
         if (!isset($requestData)) {
-            $errorMessage = 'wusong8899-guaguale.admin.guaguale-add-error';
+            $errorMessage = 'wusong8899-links-queue.admin.add-error';
         } else {
             $linkQueue = new LinksQueue();
             $linkQueue->name = $requestData['name'];
