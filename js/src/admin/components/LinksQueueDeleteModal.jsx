@@ -54,7 +54,7 @@ export default class LinksQueueDeleteModal extends Modal {
 
     this.LinksQueueItemData.delete()
     .then(
-      (response) => {
+      () => {
         location.reload();
       }
     );

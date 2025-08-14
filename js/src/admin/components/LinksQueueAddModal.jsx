@@ -92,13 +92,13 @@ export default class LinksQueueAddModal extends Modal {
           url:this.itemUrl(),
         })
         .then(
-          (linksQueueList) => {
+          () => {
             location.reload();
           }
         )
-        .catch((e) => {
+        .catch(() => {
           this.loading = false;
-          this.handleErrors(linksQueueList);
+          this.handleErrors();
         });
     }
   }

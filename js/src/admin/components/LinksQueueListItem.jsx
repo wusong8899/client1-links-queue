@@ -1,7 +1,7 @@
 import Component from "flarum/Component";
 import Button from 'flarum/components/Button';
-import LinksQueueAddModal from './LinksQueueAddModal';
-import LinksQueueDeleteModal from './LinksQueueDeleteModal';
+import LinksQueueAddModal from './LinksQueueAddModal.jsx';
+import LinksQueueDeleteModal from './LinksQueueDeleteModal.jsx';
 
 export default class LinksQueueListItem extends Component {
   view() {
@@ -9,7 +9,6 @@ export default class LinksQueueListItem extends Component {
     const linkID = LinksQueueItemData.id();
     const linkName = LinksQueueItemData.name();
     const linkUrl = LinksQueueItemData.links();
-    const linkSort = LinksQueueItemData.sort();
 
     return (
       <div style="border: 1px dotted var(--control-color);padding: 10px;border-radius: 4px;">

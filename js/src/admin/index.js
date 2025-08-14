@@ -1,5 +1,4 @@
-import {extend, override} from 'flarum/extend';
-import SettingsPage from './components/SettingsPage';
+import SettingsPage from './components/SettingsPage.jsx';
 import LinksQueue from "../forum/model/LinksQueue";
 
 app.initializers.add('wusong8899-client1-links-queue', () => {

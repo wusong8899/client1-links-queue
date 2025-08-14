@@ -1,8 +1,7 @@
 import ExtensionPage from 'flarum/components/ExtensionPage';
-import LoadingIndicator from 'flarum/components/LoadingIndicator';
 import Button from 'flarum/components/Button';
-import LinksQueueAddModal from './LinksQueueAddModal';
-import LinksQueueListItem from './LinksQueueListItem';
+import LinksQueueAddModal from './LinksQueueAddModal.jsx';
+import LinksQueueListItem from './LinksQueueListItem.jsx';
 
 import Sortable from 'sortablejs';
 
@@ -16,7 +15,7 @@ export default class SettingsPage extends ExtensionPage {
 
   initSort(){
     let el = document.getElementById('linksQueueSortableItems');
-    let sortable = Sortable.create(el,{
+    Sortable.create(el,{
           animation: 150,
           swapThreshold: 0.65,
           onEnd: (e) => this.updateSort(e),
